@@ -1,4 +1,4 @@
-function [nrgLCdt,nrgBNMdt,nrgBasedt] = lcBnmPdistn(msdLC,msdBNM,msdBase)
+function [nrgLCdt,nrgBNMdt,nrgBasedt] = lcBnmPdistn(msdLC,msdBNM,msdBase,ds)
 
 dat = msdLC;
 pd = fitdist(dat,'Kernel','BandWidth',4);
